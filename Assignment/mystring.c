@@ -25,7 +25,6 @@ char *mystrcat(char *a, char *b){
   char *ans = destination;
   return (char *) ans;
 }
-
 int mystrlen(char *a){
   char s[] = a;
   int i;
