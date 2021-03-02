@@ -12,7 +12,7 @@ sall.out:test.o libmystring.a libmyutils.a libbitmask.a
 	gcc -L${LIBPATH} $< -o $@ ${LDFLAGS} 
 libmystring.a:src/mystring.o 
 	ar rc $@ $^
-libmyutils.a:src/myutils.o 
+libmyutils.a:src/myutils.o
 	ar rc $@ $^
 libbitmask.a:src/bitmask.o 
 	ar rc $@ $^
