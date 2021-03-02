@@ -1,21 +1,16 @@
-#include "myutils.h"
-#include<stdio.h>
+#include <stdio.h>
 #include <stdarg.h> 
-
+#include "/home/ltts/Desktop/Aman Kalaskar/LINUX_Assgnment/Assignment/inc/myutils.h"
 int factorial(int x){
-    int i,fact=1;  
-    printf("Enter a x: ");    
-    scanf("%d",&x);    
+    int i,fact=1;   
     for(i=1;i<=x;i++){    
       fact=fact*i;    
     }    
-    printf("Factorial of %d is: %d",x,fact);
+    printf("Factorial of %d is: %d\n",x,fact);
     return fact; 
 }
 int isPrime(int n){
     int i, flag = 0;
-    printf("Enter a positive integer: ");
-    scanf("%d", &n);
 
     for (i = 2; i <= n / 2; ++i) {
         if (n % i == 0) {
@@ -25,16 +20,16 @@ int isPrime(int n){
     }
 
     if (n == 1) {
-        printf("1 is neither prime nor composite.");
+        printf("1 is neither prime nor composite.\n");
         return -1;
     }
     else {
         if (flag == 0){
-            printf("%d is a prime number.", n);
+            printf("%d is a prime number.\n", n);
             return 0;
         }            
         else{
-            printf("%d is not a prime number.", n);
+            printf("%d is not a prime number.\n", n);
             return 1;
         }            
     }
@@ -49,11 +44,11 @@ int isPalindrome(int n){
         n /= 10;
     }
     if (originalN == reversedN){
-            printf("%d is a palindrome.", originalN);
+            printf("%d is a palindrome.\n", originalN);
         return 0;
     }
     else{
-        printf("%d is not a palindrome.", originalN);
+        printf("%d is not a palindrome.\n", originalN);
         return 0;
     }
 }
