@@ -49,7 +49,7 @@ int isPalindrome(int n){
     }
     else{
         printf("%d is not a palindrome.\n", originalN);
-        return 0;
+        return 1;
     }
 }
 
@@ -61,5 +61,6 @@ int vsum(int num, ...)
     for (i = 0; i < num; i++)  
         sum += va_arg(valist, int);
     va_end(valist);
+    printf("vsum is: %d\n",sum);
     return sum; 
 }
