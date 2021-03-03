@@ -49,11 +49,7 @@ int isPalindrome(int n){
     }
     else{
         printf("%d is not a palindrome.\n", originalN);
-<<<<<<< HEAD:Assignment/src/myutils.c
-        return 0;
-=======
         return 1;
->>>>>>> 882f68a5a9c4a8c3657172fbcea410fb1bc7f845:Assignment/myutils.c
     }
 }
 

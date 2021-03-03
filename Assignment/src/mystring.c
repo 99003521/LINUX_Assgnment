@@ -15,10 +15,7 @@ char *mystrcat(char *a, char *b){
   strcat(a,b);
   printf("Concatenated String: %s\n", a);
   char *ans = a;
-<<<<<<< HEAD:Assignment/src/mystring.c
-=======
   printf("%s",ans);
->>>>>>> 882f68a5a9c4a8c3657172fbcea410fb1bc7f845:Assignment/mystring.c
   return (char *) ans;
 }
 int mystrlen(char *a){

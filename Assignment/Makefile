@@ -1,13 +1,11 @@
-<<<<<<< HEAD
-TARGET=hall.out
-OBJS=test.o src/mystring.o src/myutils.o src/bitmask.o
-TOPDIR=${PWD}
+# TARGET=hall.out
+# OBJS=test.o src/mystring.o src/myutils.o src/bitmask.o
+# TOPDIR=${PWD}
 
-run:
-	gcc 
-clean:
-	rm -rf ${OBJS} ${TARGET}
-=======
+# run:
+# 	gcc 
+# clean:
+# 	rm -rf ${OBJS} ${TARGET}
 PROJECTNAME = ASSIGNMENT1
 TARGET=hall.out
 OBJS=test.o src/mystring.o src/myutils.o src/bitmask.o
@@ -25,4 +23,3 @@ libraries:
 	make libmystring -C src
 	make libmyutils -C src
 	make libbitmask -C src
->>>>>>> 882f68a5a9c4a8c3657172fbcea410fb1bc7f845

@@ -3,40 +3,19 @@
 #include "inc/bitmask.h"
 #include <stdio.h>
 #include <string.h>
-<<<<<<< HEAD
-#include "Unity-master/src/unity.h"
-=======
 #include "unity/unity.h"
->>>>>>> 882f68a5a9c4a8c3657172fbcea410fb1bc7f845
 
 void setUp(void) {
     // set stuff up here
-}
+    int i = 0;
+    char a[] = "aman";
+    char b[] = "kalaskar";
+    }
 
 void tearDown(void) {
     // clean stuff up here
 }
 
-<<<<<<< HEAD
-void test_function_should_doBlahAndBlah(void) {
-    //test stuff
-}
-
-void test_function_should_doAlsoDoBlah(void) {
-    //more test stuff
-}
-
-// not needed when using generate_test_runner.rb
-int main(void) {
-    // UNITY_BEGIN();
-    // RUN_TEST(test_function_should_doBlahAndBlah);
-    // RUN_TEST(test_function_should_doAlsoDoBlah);
-    TEST_ASSERT_EQUAL_INT(0, isPrime(2));
-    TEST_ASSERT_EQUAL_INT(0, isPrime(2));
-    TEST_ASSERT_EQUAL_INT(0, isPrime(2));
-    TEST_ASSERT_EQUAL_INT(0, isPrime(2));
-    // return UNITY_END();
-=======
 void MyUtilTest(void) {
     //test stuff
     // TEST_ASSERT_EQUAL_INT(1, 10);
@@ -53,7 +32,11 @@ void MyUtilTest(void) {
 void MyStringTest(void) {
     //more test stuff
     // TEST_ASSERT_EQUAL_STRING ("amankalaskar", mystrcat("aman","kalaskar"));
-    // TEST_ASSERT_EACH_
+    TEST_ASSERT_EQUAL_INT(2, mystrlen("hi"));
+    // char *a = "aman";
+    // char *b = "kalaskar";
+    // char *c = "amankalaskar";
+    // TEST_ASSERT_EQUAL(c, mystrcat(a,b));
 }
 
 void MyBitMaskTest(void) {
@@ -70,5 +53,4 @@ int main(void) {
     RUN_TEST(MyBitMaskTest);
     
     return UNITY_END();
->>>>>>> 882f68a5a9c4a8c3657172fbcea410fb1bc7f845
 }
