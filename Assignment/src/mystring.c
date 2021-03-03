@@ -3,32 +3,23 @@
 #define MAX_SIZE 100
 
 char *mystrcpy(char *a, char *b){
-  char text1[MAX_SIZE] = a, text2[MAX_SIZE] = b;
-
-  /* Input original string from user */
-  printf("Enter any string: ");
-  gets(text1);
-
   /* Copy text1 to text2 using strcpy() */
-  strcpy(text2, text1);
+  strcpy(a, b);
 
-  printf("First string = %s\n", text1);
-  printf("Second string = %s\n", text2);
-  return text2;
+  printf("First string = %s\n", a);
+  printf("Second string = %s\n", b);
+  return b;
 }
 
 char *mystrcat(char *a, char *b){
-  char destination[] = a;
-  char source[] = b;
-  strcat(destination,source);
-  printf("Concatenated String: %s\n", destination);
-  char *ans = destination;
+  strcat(a,b);
+  printf("Concatenated String: %s\n", a);
+  char *ans = a;
   return (char *) ans;
 }
 int mystrlen(char *a){
-  char s[] = a;
   int i;
-  for (i = 0; s[i] != '\0'; ++i);
+  for (i = 0; a[i] != '\0'; ++i);
   printf("Length of the string: %d", i);
   return i;
 }
