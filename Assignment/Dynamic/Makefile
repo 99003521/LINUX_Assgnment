@@ -12,7 +12,11 @@ sall.out:test.o libmystring.a libmyutils.a libbitmask.a
 	gcc -L${LIBPATH} $< -o $@ ${LDFLAGS} 
 libmystring.a:src/mystring.o 
 	ar rc $@ $^
+<<<<<<< HEAD
 libmyutils.a:src/myutils.o 
+=======
+libmyutils.a:src/myutils.o
+>>>>>>> 882f68a5a9c4a8c3657172fbcea410fb1bc7f845
 	ar rc $@ $^
 libbitmask.a:src/bitmask.o 
 	ar rc $@ $^
