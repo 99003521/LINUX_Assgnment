@@ -1,4 +1,4 @@
-#include "/home/ltts/Desktop/Aman Kalaskar/LINUX_Assgnment/Assignment/inc/bitmask.h"
+#include "../inc/bitmask.h"
 int set(int n, int k) 
 { 
     return (n | (1 << (k - 1))); 

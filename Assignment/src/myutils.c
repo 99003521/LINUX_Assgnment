@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h> 
-#include "/home/ltts/Desktop/Aman Kalaskar/LINUX_Assgnment/Assignment/inc/myutils.h"
+#include "../inc/myutils.h"
 int factorial(int x){
     int i,fact=1;   
     for(i=1;i<=x;i++){    
