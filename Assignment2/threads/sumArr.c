@@ -29,7 +29,7 @@ void* sum_array(void* arg)
 		sum[thread_part] += a[i]; 
 }
 
-int sumof1000() 
+int main() 
 { 
 	for(int i=0;i<MAX;i++){
 		a[i]=i;
@@ -53,4 +53,4 @@ int sumof1000()
 	printf("\n");
 	int ans = total_sum;
 	return ans; 
-} 
+}
