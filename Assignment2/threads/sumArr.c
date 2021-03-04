@@ -9,30 +9,31 @@
  */
 #include <stdio.h> 
 #include <pthread.h> 
-
+#include "sum.h"
 // size of array 
 #define MAX 1000
 
 // maximum number of threads 
 #define MAX_THREAD 10 
 
-int a[] = { 1, 5, 7, 10, 12, 14, 15, 18, 20, 22, 25, 27, 30, 64, 110, 220 };
+int a[MAX]={0};
+
 int sum[10] = { 0 };
 int part = 0;
 
 void* sum_array(void* arg) 
 { 
-
 	// Each thread computes sum of 1/10th of array 
 	int thread_part = part++; 
 	for (int i = thread_part * (MAX / 10); i < (thread_part + 1) * (MAX / 10); i++) 
 		sum[thread_part] += a[i]; 
-} 
+}
 
-// Driver Code 
-int main() 
+int sumof1000() 
 { 
-
+	for(int i=0;i<MAX;i++){
+		a[i]=i;
+	}
 	pthread_t threads[MAX_THREAD]; 
 
 	// Creating 10 threads 
@@ -47,8 +48,9 @@ int main()
 	int total_sum = 0; 
 	for (int i = 0; i < MAX_THREAD; i++) 
 		total_sum += sum[i]; 
-
+	// printing the sum
 	printf("\nthe sum is: %d",total_sum);
-
-	return 0; 
+	printf("\n");
+	int ans = total_sum;
+	return ans; 
 } 
