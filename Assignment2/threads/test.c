@@ -1,5 +1,6 @@
 #include "sum.h"
 #include "minmax.h"
+#include "time.h"
 #include "../../Assignment/unity/unity.h"
 
 void setUp(void) {
@@ -20,15 +21,13 @@ void SUM_TEST(void) {
      
     
 }
-
-
-
 // not needed when using generate_test_runner.rb
 int main(void) {
     UNITY_BEGIN();
     RUN_TEST(SUM_TEST);
     int minval=getmin();
     int maxval=getmax();
-    printf("\nmin= %d\nmax= %d\n",);
+    printf("\nmin= %d\nmax= %d\n",minval,maxval);
+    getTime();
     return UNITY_END();
 }
