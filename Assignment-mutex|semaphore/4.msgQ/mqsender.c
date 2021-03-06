@@ -27,7 +27,7 @@ int main()
 		exit(2);
 	}
 #if 1
-	char str1[]="Message with pri =10";
+	char str1[]="Aman Kalaskar";
 	len=strlen(str1);
 	ret=mq_send(mqid,str1,len,10);
 	if(ret<0)

@@ -27,7 +27,14 @@ int main()
 		exit(2);
 	}
 	buf[nbytes]='\0';
-	printf("receive msg:%s,nbytes=%d,prio=%d\n",buf,nbytes,prio);
+	char rev[8192];
+	int j=0;
+	for(int i = nbytes;i>-1;i--){
+		rev[j++]=buf[i];
+		printf("%c",rev[j-1]);
+	}
+	// printf(rev);
+	printf("receive msg:%s,nbytes=%d,prio=%d\n",rev,j,prio);
 	//write(1,buf,nbytes);
 	mq_close(mqid);
 	return 0;
